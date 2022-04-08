@@ -5,7 +5,7 @@
     package="com.unity3d.player"
     xmlns:tools="http://schemas.android.com/tools">
     <application>
-		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" 
+		<meta-data android:name="dc1ab5342b50f2e9f9cbc3a71323a090cbe373a64326131d" 
 				   android:value="ca-app-pub-3033243931390124~5561986705" />
 		
         <activity android:name="com.unity3d.player.UnityPlayerActivity"

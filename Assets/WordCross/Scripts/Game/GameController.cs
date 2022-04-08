@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using AppodealAds.Unity.Api;
+using AppodealAds.Unity.Common;
+
 using dotmob;
 
 namespace WordCross
@@ -1030,6 +1033,8 @@ namespace WordCross
 			Debug.LogFormat("[GameController] Level {0} complete", level.levelData.GameLevelNumber);
 
 			SoundManager.Instance.Play("completed");
+
+			Appodeal.show(Appodeal.INTERSTITIAL);
 
 			bool	wasLevelCompleted	= level.levelData.GameLevelNumber <= LastCompletedLevelNumber;
 			int		numExtraWordsFound	= level.levelSaveData.extraWords;

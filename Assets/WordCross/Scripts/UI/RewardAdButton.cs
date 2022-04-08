@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 //using GoogleMobileAds.Api;
-//using AppodealAds.Unity.Api;
-//using AppodealAds.Unity.Common;
+using AppodealAds.Unity.Api;
+using AppodealAds.Unity.Common;
 
 using dotmob;
 using System;
@@ -93,8 +93,8 @@ namespace WordCross
 			//	rewardedAd.Show();
 			//}
 			//  }
-			//if (Appodeal.isLoaded(Appodeal.REWARDED_VIDEO))
-			//	Appodeal.show(Appodeal.REWARDED_VIDEO);
+			if (Appodeal.isLoaded(Appodeal.REWARDED_VIDEO))
+			    Appodeal.show(Appodeal.REWARDED_VIDEO);
 		}
 
 		public void onRewardedVideoLoaded(bool isPrecache)
